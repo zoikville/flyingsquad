@@ -26,6 +26,9 @@ include_once("includes/all.php");
 	$fc_select		= sql_pull($_POST['fc_select']);
 	$fc_name		= sql_pull($_POST['fc_name']);
 	
+	// only allow letters for their name //
+	$fc_name = preg_match('/^[a-zA-Z]+$/', $fc_name);
+	
 	
 	if($_POST['submit'] == "donate with your Facebook account"){
 	

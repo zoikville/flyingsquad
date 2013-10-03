@@ -59,6 +59,7 @@ include_once("includes/all.php");
 		$first_name		= $fb_profile['first_name'];
 		$last_name		= $fb_profile['last_name'];
 		$email			= $fb_profile['email'];
+		$email_confirm	= $email;
 		$m_fb_id		= $facebook_id;
 		
 		$fb_profile_img	= "<img src=\"http://graph.facebook.com/$facebook_id/picture?type=square\" />";

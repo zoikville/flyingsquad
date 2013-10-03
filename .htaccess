@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.flyingsquad\.org\.au$ [NC]
+RewriteRule ^(.*)$ http://flyingsquad.org.au/$1 [R=301,L]
+
+
+
+RewriteRule ^thankyou-([0-9]+)-([0-9]+)-([^/]+)$			thankyou.php?new=$1&select=$2&name=$3 [NC,QSA]

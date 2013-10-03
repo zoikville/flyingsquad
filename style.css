@@ -46,7 +46,7 @@ video{
 	font-style: normal;
 }
 
-/* BASIC ------------------------ */
+/* BASIC -------- */
 abbr[title],acronym[title]{
 	border-bottom: thin solid;
 	cursor: help;
@@ -192,6 +192,12 @@ input,textarea{
 	overflow: hidden;
 	height: 2005px;
 	background: #55b0e3 url(img/airport.png) no-repeat center bottom;
+}
+.wrapper-noimage{
+	clear: both;
+	overflow: hidden;
+	height: 2005px;
+	background-color:#55b0e3;
 }
 .fs_form .wrapper{
 	height: auto;
@@ -646,7 +652,7 @@ input,textarea{
 }
 .join_r p{
 }
-.fc_select{
+/*.fc_select{
 	position: relative;
 	width: 315px;
 }
@@ -679,7 +685,43 @@ input,textarea{
 .fc_select select option{
 	width: 240px;
 	padding: 0 5px;
+}*/
+.fc_select,
+.flying_name input{
+	width: 305px;
+	padding: 0 5px;
+	height: 40px;
+	line-height: 40px;
+	border: 2px solid #9b9b9b;
+	border-radius: 2px;
+	color: #000;
+	font-family: Arial;
 }
+.fc_select{
+	overflow: hidden;
+	position: relative;
+	width: 315px;
+	padding: 0;
+	margin-bottom:10px;
+	background: #fff;
+	background: #fff url(img/join.png) no-repeat right -432px;
+}
+.fc_select select{
+	width: 335px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	background: transparent;
+	padding: 3px 0 0 5px;
+	font-weight: bold;
+	font-size: 24px;
+}
+.fc_select select option{
+	width: 240px;
+	padding: 0 5px;
+}
+
+
 .flying_name input{
 	font-size: 20px;
 	color: #333;
@@ -836,3 +878,7 @@ input,textarea{
 	position:relative;
 	top:1px;
 }
+
+
+
+.squadmembers img {vertical-align:middle; border:solid #ffffff 1px; margin:2px;}

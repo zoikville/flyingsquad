@@ -67,7 +67,7 @@ include_once("includes/all.php");
     $query['upload']		= "1";
 	
     $query['business']		= "info@flyingarts.org.au";
-    $query['return']		= $gua_http ."thankyou.php?new=$new&select=$select&name=$name";
+    $query['return']		= $gua_http ."thankyou/$new/$select/$name";
     $query['cancel_return']	= $gua_http;
 	
     $query['first_name']	= $m_fname;

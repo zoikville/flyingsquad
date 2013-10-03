@@ -50,7 +50,7 @@
 	if($fb_title == ""){ $fb_title = $ptd; }
 	if($fb_url == ""){ $fb_url = "$gua_http"; }
 	if($fb_desc == ""){ $fb_desc = "Flying arts Facebook description goes here"; }
-	if($fb_img == ""){ $fb_img = "$gua_http/"."img/fb_img.jpg"; }
+	if($fb_img == ""){ $fb_img = "$gua_http"."img/fb_img.jpg"; }
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -80,9 +80,9 @@
 			<h1 class="site_title"><a href="/">Come Fly with Flying Arts Alliance in 2014</a></h1>
 			<div class="navi">
 				<ul>
-					<li><a href="#Help">donate<br />now</a></li>
-					<li><a href="#Destination">our<br />destination</a></li>
-					<li><a href="#Squad">squad<br />members</a></li>
+					<li><a href="http://flyingsquad.org.au/#Help">donate<br />now</a></li>
+					<li><a href="http://flyingsquad.org.au/#Destination">our<br />destination</a></li>
+					<li><a href="http://flyingsquad.org.au/squadmembers.php">squad<br />members</a></li>
 					<li><a href="http://www.flyingarts.org.au">FAA<br />website</a></li>
 				</ul>
 			</div>

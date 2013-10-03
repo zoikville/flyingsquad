@@ -24,9 +24,9 @@ include_once("includes/all.php");
 
 
 
-	$select		= sql_pull($_POST['select']);
-	$name		= sql_pull($_POST['name']);
-	$new		= sql_pull($_POST['new']);
+	$select		= sql_pull($_GET['select']);
+	$name		= sql_pull($_GET['name']);
+	$new		= sql_pull($_GET['new']);
 	
 	
 	if(!is_numeric($new) || !is_numeric($select)){ Header("Location: $gua_http"); exit; }
@@ -37,11 +37,10 @@ include_once("includes/all.php");
 		UPDATE fa_members
 		SET m_payment_confirmed = '1' 
 		WHERE m_id = '$new' AND m_flying_name = '$name' AND m_flying_crewtype = '$select'
+		LIMIT 1
 	");
 	
-	
-	
-	if($query){
+	if(@mysql_affected_rows() > 0){
 		$display = "
 			<h1>Thank you $name!</h1>
 			<p>Your donation is much appreciated.</p>
